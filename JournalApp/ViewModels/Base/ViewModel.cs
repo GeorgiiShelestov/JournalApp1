@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 namespace JournalApp.ViewModels.Base
 {
-
     internal abstract class ViewModel : INotifyPropertyChanged, IDisposable
     {
         public event PropertyChangedEventHandler PropertyChanged;
@@ -40,11 +39,6 @@ namespace JournalApp.ViewModels.Base
         {
             if (!Disposing || _Disposed) return;
             _Disposed = true;
-        }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
         }
     }
 }
